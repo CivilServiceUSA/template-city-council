@@ -1,5 +1,5 @@
 var fs = require('fs');
-var data = require('./data/city-council-data.json');
+var data = require('../city-council/data/city-council-data.json');
 var values = require('object.values');
 
 if (!Object.values) {
