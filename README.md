@@ -2,6 +2,14 @@
 
 __Civil Services__ is a collection of tools that make it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.
 
+
+DEVELOPERS
+===
+
+See **[DEVELOPERS.md](DEVELOPERS.md)** for details on using this repository.  This template, including the rest of the README below, assumes you are starting a new project from scratch, and will be using this template as a base for a new City Council.
+
+**NOTE:**  This project provides no actual data and should ONLY be used as a template for creating new City Council Repositories.
+
 City Council Data for CITY_NAME, STATE_CODE
 ===
 
@@ -73,9 +81,3 @@ Parameter             | Type   | Description
 
 * `city_background_url` is available in the following sizes: 640x360, 960x540, 1280x720 & 1920x1080 ( defaults to 1280x720 )
 * `city_photo_url` is available in the following sizes: 64x64, 128x128, 256x256, 512x512 & 1024x1024 ( defaults to 512x512 )
-
-
-Developers
----
-
-See [DEVELOPERS.md] for details on using this repository.
