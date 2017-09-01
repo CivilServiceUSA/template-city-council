@@ -54,6 +54,7 @@
     "url": "https://peterschmalfeldt.com"
   },
   "scripts": {
+    "start": "ws --spa index.html --port 5050",
     "json-to-yml": "if ( test -e ./city-council/data/city-council-data.json ); then ./node_modules/.bin/json2yaml ./city-council/data/city-council-data.json > ./city-council/data/city-council-data.yml && echo '✓ Updated city-council/data/city-council-data.yml'; else echo '\n× Missing ./city-council/data/city-council-data.json ( npm run -s convert-csv )\n'; fi",
     "json-to-xml": "if ( test -e ./city-council/data/city-council-data.json ); then node ./.scripts/json-to-xml.js && echo '✓ Updated city-council/data/city-council-data.xml'; else echo '\n× Missing ./city-council/data/city-council-data.json ( npm run -s convert-csv )\n'; fi",
     "csv-to-sql": "if ( test -e ./city-council/data/city-council-data.json ); then node ./.scripts/csv-to-sql.js && echo '✓ Updated city-council/data/city-council-data.sql'; else echo '\n× Missing ./city-council/data/city-council-data.json ( npm run -s convert-csv )\n'; fi",
@@ -76,6 +77,7 @@
     "json-pretty-print": "0.0.4",
     "json2csv": "^3.7.3",
     "json2yaml": "^1.1.0",
+    "local-web-server": "^2.2.4",
     "object.values": "^1.0.4",
     "parse-address": "0.0.6",
     "slug": "^0.9.1",

@@ -51,7 +51,7 @@ Now that we have the CSV file for the city we want to work on, we need to get a 
 Step #3: Updating Template Variables
 ---
 
-We have setup the following variables so you can do a project wide find and replace.  Before you run any NPM scripts to convert the data, you should do a project wide Find & Replace for the following `KEYORD`.
+We have setup the following variables so you can do a project wide find and replace.  Before you run any NPM scripts to convert the data, you should do a project wide Find & Replace ( making sure to match case & whole words only ) for the following `KEYWORD`.
 
 KEYWORD           | DESCRIPTION
 ------------------|---------------
@@ -70,9 +70,8 @@ Step #4: Building Initial Data
 We have a few NPM scripts setup to automate most of the build processes.  Once you've updated the Template Variables, we can build out our initial data.
 
 1. Open up terminal and change into your current city council project repo
-2. Run `npm run convert-csv` with the newly download CSV file ( this will create a new CSV file with some new columns we need for other data formats )
-3. Run `npm run build-data` to build XML, YML, SQL & JSON files
-4.
+2. Run `npm run -s convert-csv` with the newly download CSV file ( this will create a new CSV file with some new columns we need for other data formats )
+3. Run `npm run -s build-data` to build XML, YML, SQL & JSON files
 
 
 Step #5: Add GeoJSON Data
@@ -84,7 +83,17 @@ In order for the Civil Services API to use this City Council data, we need to ma
 2. Verify that the GeoJSON district map file is valid, by opening the file in http://geojson.io.  If the map fails to load there, then our API will not be able to use the file.
 3. Once the GeoJSON file is valid, save it to `./source/city-council.geojson`.
 4. Open `./source/city-council.geojson` and update each district with a custom ID added to it that must match the district that is named in the CSV file. Each `Feature` in the `FeatureCollection` will need a custom param like `"district": "1"`.  See our [San Francisco](https://raw.githubusercontent.com/CivilServiceUSA/city-council-ca-san-francisco/master/source/city-council.geojson) file as an example.
-5. Once the GeoJSON is ready, merge in the City Council data as properties on the GeoJSON so each district has that councilors data `npm run build-geojson`
+5. Once the GeoJSON is ready, merge in the City Council data as properties on the GeoJSON so each district has that councilors data `npm run -s build-geojson`
+
+
+PREVIEW: Open in Browser
+---
+
+Now that you have everything ready, you can preview this city council website in a browser.
+
+1. Run `npm start` which will start a local browser instance
+2. Visit [http://localhost:5050/](http://localhost:5050/)
+3. Check the Browsers Developer Console for any Javascript Errors
 
 
 OPTIONAL: Add Headshots
@@ -96,7 +105,7 @@ This is another process that takes a crazy long time.  Civil Services wishes to 
 2. Use a Photo Editor ( [https://pixlr.com/editor/](https://pixlr.com/editor/) if you do not already have one ) and make the headshot exactly 1024px x 1024px in size
 3. Export image with a name like `firstname-lastname.jpg` ( using their actual first and last name, all lower case letters, using only letters a-z and replace all spaces with dashes ).
 4. Move the newly create file into this `./source/headshots/` directory
-5. Once all headshots are made, run `npm run build-images`
+5. Once all headshots are made, run `npm run -s build-images`
 
 
 Possible Build Issues
@@ -104,4 +113,4 @@ Possible Build Issues
 
 The following are a list of known issues.  If you run into an error that is not listed below, please contact us to let us know.
 
-* **ERROR:** `Missing ./source/city-council-data.csv` - This happens when there is no `city-council-data.csv` file in the `./source` directory as it is required for the `npm run convert-csv` process.
+* **ERROR:** `Missing ./source/city-council-data.csv` - This happens when there is no `city-council-data.csv` file in the `./source` directory as it is required for the `npm run -s convert-csv` process.
