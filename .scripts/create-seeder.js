@@ -58,7 +58,7 @@ function createSeeder() {
   seeder = seeder.replace(/\\"Polygon\\"/g, '"Polygon"');
   seeder = seeder.replace(/\\"coordinates\\":/g, '"coordinates":');
 
-  fs.writeFile(seeder_file, seeder);
+  fs.writeFile(seeder_file, seeder, function(){});
 }
 
 if (!fs.existsSync(data_file)) {
@@ -69,6 +69,10 @@ if (!fs.existsSync(data_file)) {
   data = JSON.parse(fs.readFileSync(data_file, 'utf8'));
 
   for (var i = 0; i < data.length; i++) {
+
+    if (data[i].at_large === true || data[i].at_large === 'true') {
+      continue;
+    }
 
     var geojsonFile = 'city-council/geojson/city-council-';
 
