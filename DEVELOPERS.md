@@ -51,17 +51,26 @@ Now that we have the CSV file for the city we want to work on, we need to get a 
 Step #3: Updating Template Variables
 ---
 
-We have setup the following variables so you can do a project wide find and replace.  Before you run any NPM scripts to convert the data, you should do a project wide Find & Replace ( making sure to match case & whole words only ) for the following `KEYWORD`.
+We have setup the following variables so you can do a project wide find and replace.  Before you run any NPM scripts to convert the data, you should do a project wide Find & Replace for ALL of the following `KEYWORD`s.
 
-KEYWORD           | DESCRIPTION
-------------------|---------------
-`CITY_NAME`       | City Name, e.g. `St. Louis`
-`CITY_NAME_SLUG`  | Slug version of the City Name `st-louis` ( all lowercase alphanumberic letters, spaces converted to dashes )
-`CITY_DATA_URL`   | Absolute URL to the Civil Services Spreadsheet for the CSV file
-`CITY_WEBSITE`    | Absolute URL to the Cities Official City Government Website
-`REPO_NAME`       | This is the CivilServiceUSA repo name for this city, e.g. `city-council-ca-san-francisco`
-`STATE_CODE`      | Uppercase Two letter abbreviation for the State
-`STATE_CODE_SLUG` | Lowercase Two letter abbreviation for the State
+**IMPORTANT:** Make sure to **match case** & **whole word** only, including the double underscore  `__` prefix * suffix.  Otherwise you are going to likely replace stuff in the project that will cause problems later.
+
+KEYWORD                                | DESCRIPTION
+---------------------------------------|---------------
+`__CITY_COUNCIL_CALENDAR_WEBSITE__`    | Absolute URL to the City Council's Calendar Website ( usually listed on the `__CITY_WEBSITE__` )
+`__CITY_COUNCIL_COMMITTEES_WEBSITE__`  | Absolute URL to the City Council's Committees ( Planning Committees, Committee Members ) Website ( usually listed on the `__CITY_WEBSITE__` )
+`__CITY_COUNCIL_LEGISLATION_WEBSITE__` | Absolute URL to the City Council's Legislation ( Votes, Bills, Etc ) Website ( usually listed on the `__CITY_WEBSITE__` )
+`__CITY_COUNCIL_WEBSITE__`             | Absolute URL to the Cities Official City Council Website ( usually listed on the `__CITY_WEBSITE__` )
+`__CITY_DATA_URL__`                    | Absolute URL to the Civil Services Spreadsheet for the CSV file
+`__CITY_GPS_LATITUDE__`                | City's GPS Latitude Coordinate ( e.g. `29.7534372` I just use Google and search for the `__CITY_NAME__` and add "coordinates" to the search )
+`__CITY_GPS_LONGITUDE__`               | City's GPS Longitude Coordinate ( e.g. `-95.3921393` I just use Google and search for the `__CITY_NAME__` and add "coordinates" to the search )
+`__CITY_NAME__`                        | City Name, e.g. `St. Louis`
+`__CITY_NAME_SLUG__`                   | Slug version of the City Name `st-louis` ( all lowercase alphanumberic letters, spaces converted to dashes )
+`__CITY_POPULATION__`                  | Population of City ( written without commas, e.g. 1234567)
+`__CITY_WEBSITE__`                     | Absolute URL to the Cities Official City Government Website
+`__REPO_NAME__`                        | This is the CivilServiceUSA repo name for this city, e.g. `city-council-ca-san-francisco`
+`__STATE_CODE__`                       | Uppercase Two letter abbreviation for the State
+`__STATE_CODE_SLUG__`                  | Lowercase Two letter abbreviation for the State
 
 
 Step #4: Building Initial Data

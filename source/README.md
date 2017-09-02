@@ -14,7 +14,7 @@ Update CSV File
 
 This City Council Data is maintained in a Google Spreadsheet.  
 
-* Go to [City Council Data](CITY_DATA_URL)
+* Go to [City Council Data](__CITY_DATA_URL__)
 * Select `File > Download as > Comma-separated values (.csv, current sheet)`
 * Save file as `./source/city-council-data.csv`
 

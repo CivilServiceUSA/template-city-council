@@ -230,7 +230,7 @@ function init() {
         "address": {
           "@type": "PostalAddress"
         },
-        "url": "https://civilserviceusa.github.io/REPO_NAME/",
+        "url": "https://civilserviceusa.github.io/__REPO_NAME__/",
         "sameAs": []
       };
 
@@ -250,8 +250,8 @@ function init() {
         jsonld.sameAs.push(val.facebook_url);
       }
 
-      jsonld.image = 'https://civilserviceusa.github.io/REPO_NAME/images/headshots/512x512/' + val.name_slug + '.jpg';
-      jsonld.jobTitle = toTitleCase(val.title) + ' of CITY_NAME City Council';
+      jsonld.image = 'https://civilserviceusa.github.io/__REPO_NAME__/images/headshots/512x512/' + val.name_slug + '.jpg';
+      jsonld.jobTitle = toTitleCase(val.title) + ' of __CITY_NAME__ City Council';
       jsonld.name = val.name;
       jsonld.url = val.city_council_url;
 

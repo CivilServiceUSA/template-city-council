@@ -1,3 +1,3 @@
-name: Civil Services - City Council Data for CITY_NAME, STATE_CODE
-description: City Council Data, Headshots & City Photo for CITY_NAME, STATE_CODE ( JSON, XML, CSV, SQL & YML formats )
+name: Civil Services - City Council Data for __CITY_NAME__, __STATE_CODE__
+description: City Council Data, Headshots & City Photo for __CITY_NAME__, __STATE_CODE__ ( JSON, XML, CSV, SQL & YML formats )
 theme: jekyll-theme-cayman

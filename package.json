@@ -1,15 +1,15 @@
 {
-  "name": "civil-services-REPO_NAME",
+  "name": "civil-services-__REPO_NAME__",
   "version": "1.0.0",
-  "description": "City Council Data for CITY_NAME, STATE_CODE ( JSON, XML, CSV, SQL & YML formats )",
+  "description": "City Council Data for __CITY_NAME__, __STATE_CODE__ ( JSON, XML, CSV, SQL & YML formats )",
   "license": "MIT",
   "keywords": [
     "Civil Services",
     "US",
     "United States",
     "City Council",
-    "CITY_NAME",
-    "STATE_CODE",
+    "__CITY_NAME__",
+    "__STATE_CODE__",
     "data",
     "json",
     "csv",
@@ -23,30 +23,30 @@
     "map"
   ],
   "cityData": {
-    "repo_name": "REPO_NAME",
-    "state_code": "STATE_CODE",
-    "state_code_slug": "STATE_CODE_SLUG",
-    "city_name": "CITY_NAME",
-    "city_name_slug": "CITY_NAME_SLUG",
-    "city_data_url": "CITY_DATA_URL",
-    "city_website": "CITY_WEBSITE",
-    "city_population": "",
-    "city_government_url": "",
-    "city_council_url": "",
-    "city_council_calendar_url": "",
-    "city_council_legislation_url": "",
-    "city_council_committees_url": "",
-    "latitude": "",
-    "longitude": ""
+    "repo_name": "__REPO_NAME__",
+    "state_code": "__STATE_CODE__",
+    "state_code_slug": "__STATE_CODE_SLUG__",
+    "city_name": "__CITY_NAME__",
+    "city_name_slug": "__CITY_NAME_SLUG__",
+    "city_data_url": "__CITY_DATA_URL__",
+    "city_website": "__CITY_WEBSITE__",
+    "city_population": "__CITY_POPULATION__",
+    "city_government_url": "__CITY_WEBSITE__",
+    "city_council_url": "__CITY_COUNCIL_WEBSITE__",
+    "city_council_calendar_url": "__CITY_COUNCIL_CALENDAR_WEBSITE__",
+    "city_council_legislation_url": "__CITY_COUNCIL_LEGISLATION_WEBSITE__",
+    "city_council_committees_url": "__CITY_COUNCIL_COMMITTEES_WEBSITE__",
+    "latitude": "__CITY_GPS_LATITUDE__",
+    "longitude": "__CITY_GPS_LONGITUDE__"
   },
   "main": "data/city-council.json",
-  "homepage": "https://civilserviceusa.github.io/REPO_NAME/",
+  "homepage": "https://civilserviceusa.github.io/__REPO_NAME__/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/civilserviceusa/REPO_NAME.git"
+    "url": "git+https://github.com/civilserviceusa/__REPO_NAME__.git"
   },
   "bugs": {
-    "url": "https://github.com/civilserviceusa/REPO_NAME/issues"
+    "url": "https://github.com/civilserviceusa/__REPO_NAME__/issues"
   },
   "author": {
     "name": "Peter Schmalfeldt",

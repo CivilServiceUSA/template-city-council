@@ -10,24 +10,24 @@ See **[DEVELOPERS.md](DEVELOPERS.md)** for details on using this repository.  Th
 
 **NOTE:**  This project provides no actual data and should ONLY be used as a template for creating new City Council Repositories.
 
-City Council Data for CITY_NAME, STATE_CODE
+City Council Data for __CITY_NAME__, __STATE_CODE__
 ===
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://raw.githubusercontent.com/CivilServiceUSA/REPO_NAME/master/LICENSE)  [![GitHub contributors](https://img.shields.io/github/contributors/CivilServiceUSA/REPO_NAME.svg)](https://github.com/CivilServiceUSA/REPO_NAME/graphs/contributors)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://raw.githubusercontent.com/CivilServiceUSA/__REPO_NAME__/master/LICENSE)  [![GitHub contributors](https://img.shields.io/github/contributors/CivilServiceUSA/__REPO_NAME__.svg)](https://github.com/CivilServiceUSA/__REPO_NAME__/graphs/contributors)
 
-![CITY_NAME, STATE_CODE](city-council/images/backgrounds/640x360/city.jpg "CITY_NAME, STATE_CODE")
+![__CITY_NAME__, __STATE_CODE__](city-council/images/backgrounds/640x360/city.jpg "__CITY_NAME__, __STATE_CODE__")
 
 
 Introduction
 ---
 
-This project provides the City Council Data, Headshots & City Photo for CITY_NAME, STATE_CODE ( JSON, XML, CSV, SQL & YML formats ).  See [Provided Data](#provided-data) below for full list of data in this project.
+This project provides the City Council Data, Headshots & City Photo for __CITY_NAME__, __STATE_CODE__ ( JSON, XML, CSV, SQL & YML formats ).  See [Provided Data](#provided-data) below for full list of data in this project.
 
 
 Completed Tasks
 ---
 
-We have completed the following Data Collection for CITY_NAME, STATE_CODE. [Watch Project](https://github.com/CivilServiceUSA/REPO_NAME/subscription) to be notified of updates.
+We have completed the following Data Collection for __CITY_NAME__, __STATE_CODE__. [Watch Project](https://github.com/CivilServiceUSA/__REPO_NAME__/subscription) to be notified of updates.
 
 - [ ] City Council Data Created
 - [ ] City Photo Created
@@ -42,9 +42,9 @@ Maintaining Data
 
 This City Council Data is maintained in a Google Spreadsheet.  This data can be updated by the general public, and we will be notified when any change occurs.  So, if you see something wrong, just go ahead and fix it and we'll get a notice of the change.
 
-You will want to use [CITY_NAME's Official City Council Website](CITY_WEBSITE) to populate this data. However, they may not have 100% of what we collect, so Google is your friend there :)
+You will want to use [__CITY_NAME__'s Official City Council Website](__CITY_WEBSITE__) to populate this data. However, they may not have 100% of what we collect, so Google is your friend there :)
 
-### [☑ Manage City Council Data](CITY_DATA_URL)
+### [☑ Manage City Council Data](__CITY_DATA_URL__)
 
 
 Provided Data
