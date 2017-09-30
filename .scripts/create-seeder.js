@@ -79,7 +79,7 @@ if (!fs.existsSync(data_file)) {
     if (data[i].district) {
       geojsonFile += data[i].state_code_slug + '-' + data[i].city_name_slug + '-' + data[i].district.replace(/\s/g, '-').toLowerCase() + '.geojson';
     } else {
-      geojsonFile += data[i].state_code_slug + '.geojson';
+      geojsonFile += data[i].state_code_slug + '-' + data[i].city_name_slug + '.geojson';
     }
 
     var contents = fs.readFileSync(path.join(__dirname, '../' + geojsonFile), 'utf8');
